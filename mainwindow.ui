@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="janela_pai">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="menuTopo">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(31, 31, 31);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_informacoes">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>CRUD PostgreSQL</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_minimizar">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_minimizar">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>50</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/minimizar/images/minimize.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_fechar">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_fechar">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>50</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/fechar/images/icons8-delete-24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="conteiner_central">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(35, 35, 35);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="janela_central">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="banco_de_dados">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="spacing">
+               <number>9</number>
+              </property>
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLineEdit" name="input_db">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>database</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="input_host">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>host</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="input_porta">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>porta</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="input_usuario">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>usuário</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="input_senha">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>senha</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Normal</enum>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_enviar">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:rgb(0,0,0);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>enviar</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="barra_menus_banco_dados">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QFrame" name="conteiner_esquerda_db">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_15">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="db_texto_titulo">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>titulo</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextEdit" name="db_texto_codigo">
+                      <property name="styleSheet">
+                       <string notr="true">QTextEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Courier New;
+}
+QTextEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTextEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="html">
+                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Courier New'; font-size:15px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15px;&quot;&gt;codigo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="overwriteMode">
+                       <bool>false</bool>
+                      </property>
+                      <property name="placeholderText">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="conteiner_direita_db">
+                   <property name="maximumSize">
+                    <size>
+                     <width>400</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="db_texto_link">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>link</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextEdit" name="db_texto_observacao">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QTextEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Courier New;
+}
+QTextEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTextEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="html">
+                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Courier New'; font-size:15px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15px;&quot;&gt;observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="conteiner_menus_db">
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_18">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_adiciona">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>adiciona</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_atualiza">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>atualiza</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_deleta">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>deleta</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_dados_db">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>9</number>
+                 </property>
+                 <item>
+                  <widget class="QTableView" name="tabela_dados_db">
+                   <property name="styleSheet">
+                    <string notr="true">QHeaderView {
+background: rgb(30, 30, 30);
+}
+QHeaderView::section{
+	color: rgb(255, 255, 255);
+background: rgb(35,35,35);
+}
+QTableCornerButton::section{
+background: rgb(35,35,35);
+}
+QHeaderView::section:pressed{
+background: rgb(30,144,255);
+}
+QTableCornerButton::section:pressed{
+background: rgb(30,144,255);
+}
+
+
+
+QTableView{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QTableView:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTableView:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}
+* { gridline-color: gray }</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="gridStyle">
+                    <enum>Qt::SolidLine</enum>
+                   </property>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>150</number>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="rodape">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(31, 31, 31);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="rodape_desenvolvedor">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+margin-right: 5px;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>manicomio | 2020</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="rodape_versao">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+margin-right: 5px;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>v1.0  </string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="redimensionador">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSizeGrip {
+	
+	background-image: url(:/redimensiona/images/cil-move.png);
+	background-position: center;
+	background-repeat: no-reperat;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="files_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
